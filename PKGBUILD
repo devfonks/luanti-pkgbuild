@@ -25,7 +25,7 @@ build () {
         mkdir build
         cd build
         cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="/usr" ..
-        make -j$(( $(nproc) * 2 )) -l$(nproc)
+        make
 }
 
 check () {
