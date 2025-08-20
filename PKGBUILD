@@ -10,7 +10,7 @@ makedepends=(libcurl-gnutls cmake libpng libogg gmp leveldb ncurses zstd gettext
 conflicts=(minetest)
 replaces=(minetest)
 source=("luanti-${pkgver}.tar.gz::https://github.com/luanti-org/luanti/archive/refs/tags/${pkgver}.tar.gz")
-b2sums=(SKIP)
+b2sums=(0aae40158f526d7f8929dca5a3748f1867f28936acd8463331a7030cc0d5a2daa176e8cd2dddd1057c96b3ff730860ee2ff849c067ddbff02e2293adfb185b70)
 
 prepare () { 
         return 0 
