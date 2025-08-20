@@ -17,7 +17,7 @@ prepare () {
 }
 
 pkgver () {
-        return 0
+        echo "${pkgver}"
 }
 
 build () {
@@ -33,6 +33,8 @@ check () {
 }
 
 package () {
-        make DESTDIR="$pkgdir" install
+        cd "${pkgname}-${pkgver}"
+        cd build
+        make DESTDIR="${pkgdir}" install
 }
 
