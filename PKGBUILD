@@ -24,7 +24,7 @@ build () {
         cd "${pkgname}-${pkgver}"
         mkdir build
         cd build
-        cmake -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="/usr" ..
+        cmake -DCMAKE_BUILD_TYPE="Debug" -DCMAKE_INSTALL_PREFIX="/usr" ..
         make
 }
 
